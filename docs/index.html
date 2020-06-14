@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Инвест-план</title>
+  <link rel="shortcut icon" href="favicon.ico"><link href="style.bundle.css" rel="stylesheet"></head>
+  <body>
+    <h1>Калькулятор Инвестиционного Капитала</h1>
+    <div id="calculator">
+      <div id="calculator-options">
+        <form id="calculator-form" className="needs-validation">
+          <ul>
+            <li className="row">
+              <label htmlFor="age-start"
+                >Возраст начала наращивания портфеля, лет</label
+              >
+              <input name="age-start" type="text" />
+            </li>
+            <li className="row">
+              <label htmlFor="age-mid"
+                >Возраст завершения наращивания портфеля, лет</label
+              >
+              <input name="age-mid" type="text" />
+            </li>
+            <li className="row">
+              <label htmlFor="age-end"
+                >Возраст завершения расходования портфеля, лет</label
+              >
+              <input name="age-end" type="text" />
+            </li>
+            <li className="row">
+              <label htmlFor="cash-start">Стартовый капитал, руб.</label>
+              <input name="cash-start" type="text" />
+            </li>
+            <li className="row">
+              <label htmlFor="cash-add"
+                >Сумма ежемесячного пополнения, руб.</label
+              >
+              <input name="cash-add" type="text" />
+            </li>
+            <li className="row">
+              <label htmlFor="cash-sub">Сумма ежемесячных расходов, руб.</label>
+              <input name="cash-sub" type="text" />
+            </li>
+            <li className="row">
+              <label htmlFor="rate-profit"
+                >Реальная годовая доходность<br />(прирост покупательской
+                способности), %</label
+              >
+              <input name="rate-profit" type="text" />
+            </li>
+          </ul>
+        </form>
+      </div>
+
+      <div id="calculator-chart">
+        Загрузка...
+      </div>
+    </div>
+    <p id="summary">
+      Максимальная стоимость портфеля - <span>0</span> руб., финальная стоимость
+      портфеля - <span>0</span> руб. (в текущих значениях).
+    </p>
+    <p id="description">
+      Красная линия на графике - стоимость портфеля, синяя - баланс вложенных
+      средств.
+    </p>
+  <script type="text/javascript" src="main.bundle.js"></script></body>
+</html>
